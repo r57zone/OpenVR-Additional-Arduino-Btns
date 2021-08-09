@@ -64,6 +64,14 @@ public:
 	**/
 	void RunFrame();
 
+	float joystickX;
+	float joystickY;
+	float trackpadX;
+	float trackpadY;
+
+	bool aAction;
+	bool bAction;
+
 private:
 
 	uint32_t driverId;
@@ -72,4 +80,6 @@ private:
 	VRInputComponentHandle_t joystickXHandle;
 	VRInputComponentHandle_t trackpadXHandle;
 
+	vr::VRInputComponentHandle_t aBtnHandle;
+	vr::VRInputComponentHandle_t bBtnHandle;
 };

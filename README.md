@@ -1,5 +1,26 @@
-# Open VR Driver Example
+[![EN](https://user-images.githubusercontent.com/9499881/33184537-7be87e86-d096-11e7-89bb-f3286f752bc6.png)](https://github.com/r57zone/OpenVR-Additional-Arduino-Btns/blob/master/README.md)
+[![RU](https://user-images.githubusercontent.com/9499881/27683795-5b0fbac6-5cd8-11e7-929c-057833e01fb1.png)](https://github.com/r57zone/OpenVR-Additional-Arduino-Btns/blob/master/README.RU.md) 
+# OpenVR Additional Arduino Buttons
+OpenVR driver that allows to duplicate the controller buttons in VR, using an Arduino based device.
 
-This repository is an example on how to implement an Open VR driver that sends joystick and/or trackpad input to Open VR. This input will move the game character. This sample is simply hard coded to constantly send forward joystick and trackpad input to Open VR, causing the game character to constantly move foward just like if you were using a regular VR controller and holding the joystick/trackpad forward. You can take this example and replace the hardcoded move foward code with code that actually gets output from a device, such as a VR treadmill, VR shoes [like mine](https://github.com/finallyfunctional/vr-shoes-software), VR shoes like [CyberShoes](https://www.cybershoes.io/), or VR sensors similar to [Kat Loco](https://www.kat-vr.com/products/KAT-loco).
+## Driver setup
+1. Flash the firmware to Arduino.
+2. Unpack "OpenVR.Arduino.Btns.SteamVR.zip" в папку `...\Steam\steamapps\common\SteamVR\drivers`.
+3. Change the COM port number in the configuration file `\SteamVR\drivers\arduinobuttons\resources\settings\default.vrsettings`.
+4. (Optional) Turn on `DebugMode`, change its value to`true`, to check the work of the driver without Arduino.
 
-I created this sample and wrote lots of documentation in this [repository's wiki](https://github.com/finallyfunctional/openvr-driver-example/wiki) because I found the [existing OpenVR documentation](https://github.com/ValveSoftware/openvr/wiki/Driver-Documentation) and [driver sample](https://github.com/ValveSoftware/openvr/tree/master/samples/driver_sample) to be lacking. It was hard to create this sample initially, not knowing anything about OpenVR. I had to slowly piece together over many hours information from the documentation, sample, and other samples and Open VR implementations I found online to make this driver sample that simply moves the character forward. My hope is that this sample and the documentation I provide here will make it easier for complete beginners to start using Open VR.
+Debugging mode allows to check the driver, without Arduino, using the keyboard. The arrows change the position of the VR controller stick, the Numpad arrows (8, 2, 4, 6) change the position of the touchpad, and the "Numpad 7" and "Numpad 9" press the "A" and "B" buttons.
+
+## SteamVR Setup
+Can check the operation of the driver by going to the SteamVR settings, enabling advanced settings, selecting "Controllers" and clicking the "Test controller" button. There you need to select `#/USER/TREADMILL` and click on it.
+
+
+
+In order for the games to understand what to do by pressing the keys, button bindings are necessary. To do this, go to "SteamVR Settings" -> "Advanced Settings" -> Show -> "Controllers" -> "Show the old layout" or you can [follow the link](http://localhost:27062/dashboard/controllerbinding.html) and configure it in the browser. Then we select the desired running game, add actions to the buttons, actions to the sticks or touchpad, then save the key binding and play. Can also set default actions for all games by changing the settings for SteamVR.
+
+## Download
+>Version for x64.<br>
+**[Download](https://github.com/r57zone/OpenVR-Additional-Arduino-Btns/releases)**
+
+## Feedback
+`r57zone[at]gmail.com`

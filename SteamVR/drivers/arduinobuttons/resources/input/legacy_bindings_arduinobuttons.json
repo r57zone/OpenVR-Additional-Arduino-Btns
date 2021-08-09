@@ -1,0 +1,57 @@
+{
+   "bindings" : {
+      "/actions/legacy" : {
+	  "haptics" : [
+         ],
+         "poses" : [
+         ],
+         "sources" : [
+			{
+               "inputs" : {
+                  "position" : {
+                     "output" : "/actions/legacy/in/left_axis0_value"
+                  }
+               },
+               "mode" : "trackpad",
+               "path" : "/user/treadmill/input/trackpad"
+            },
+			{
+               "inputs" : {
+                  "position" : {
+                     "output" : "/actions/legacy/in/left_axis0_value"
+                  }
+               },
+               "mode" : "joystick",
+               "path" : "/user/treadmill/input/joystick"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/legacy/in/left_grip_press"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/treadmill/input/a/click"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/legacy/in/left_applicationmenu_press"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/treadmill/input/b/click"
+            }
+         ]
+      }
+   },
+   "category" : "legacy",
+   "controller_type" : "arduinobuttons_controller",
+   "description" : "Legacy mapping for arduinobuttons",
+   "name" : "Legacy_Binding_ArduinoButtons",
+   "options" : {
+      "mirror_actions" : false,
+      "returnBindingsWithLeftHand" : true,
+      "simulated_controller_type" : "none"
+    }
+}

@@ -1,0 +1,6 @@
+{
+   "ArduinoButtons" : {
+      "DebugMode" : true,
+      "COMPort" : 3
+   }
+}

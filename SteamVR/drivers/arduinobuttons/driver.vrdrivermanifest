@@ -1,0 +1,8 @@
+{
+	"alwaysActivate": true,
+	"name" : "arduinobuttons",
+	"directory" : "",
+	"resourceOnly" : false,
+	"prefersUpperDeviceIndices" :  true,
+	"hmd_presence" : []
+}
