@@ -7,7 +7,7 @@ OpenVR driver that allows to duplicate the controller buttons in VR, using an Ar
 1. Flash the firmware to Arduino.
 2. Unpack "OpenVR.Arduino.Btns.SteamVR.zip" в папку `...\Steam\steamapps\common\SteamVR\drivers`.
 3. Change the COM port number in the configuration file `\SteamVR\drivers\arduinobuttons\resources\settings\default.vrsettings`.
-4. (Optional) Turn on `DebugMode`, change its value to`true`, to check the work of the driver without Arduino.
+4. (Optional) Turn on `DebugMode`, change its value to `true`, to check the work of the driver without Arduino.
 
 Debugging mode allows to check the driver, without Arduino, using the keyboard. The arrows change the position of the VR controller stick, the Numpad arrows (8, 2, 4, 6) change the position of the touchpad, and the "Numpad 7" and "Numpad 9" press the "A" and "B" buttons.
 
